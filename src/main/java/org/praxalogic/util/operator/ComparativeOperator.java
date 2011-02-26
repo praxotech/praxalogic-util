@@ -14,7 +14,7 @@ public abstract class ComparativeOperator<T extends Comparable<T>> extends Opera
    */
   @Override
   public void validate() {
-    if (getOperandList().size() != 2) throw new RuntimeException("");
+    if (getOperandList().size() != 2) throw new RuntimeException("Two operands are required for the operator.");
   }
 
 }
