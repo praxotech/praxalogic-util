@@ -1,8 +1,9 @@
 /**
- * Copyright (c), 2008 - 2009, PraxaLogic Org.
+ * Copyright (c), 2008 - 2011, PraxaLogic Org.
  */
 package org.praxalogic.util.job.management;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Observable;
 import java.util.Observer;
@@ -30,7 +31,7 @@ public class JobManager implements Observer {
   private final ThreadPoolExecutor workerPool;
   private Job job;
   private final JobContext ctx = new JobContext();
-  private Set<Task> completedTasks = new HashSet<Task>();
+  private Set<Task> completedTasks = Collections.synchronizedSet(new HashSet<Task>());
   
   /**
    * The parameter thread pool is assigned to the manager.
@@ -109,7 +110,6 @@ public class JobManager implements Observer {
         wait();
       }
       catch (InterruptedException e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
