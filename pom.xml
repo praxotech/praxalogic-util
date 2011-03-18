@@ -2,13 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.praxalogic</groupId>
-  <artifactId>praxalogic-util</artifactId>
+  <groupId>org.praxotech</groupId>
+  <artifactId>praxotech-util</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>praxalogic-util</name>
-  <url>http://www.praxalogic.org</url>
+  <name>praxotech-util</name>
+  <url>http://www.praxotech.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
